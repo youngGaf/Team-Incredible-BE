@@ -167,23 +167,23 @@
   } */
 
 @media(min-width: 570px) {
-  .login-form-container {
+  .login-form-container, .signup-form-container {
     width: 60% !important;
     margin-left: auto !important;
     margin-right: auto !important;
     height: 100vh !important;
   }
-  .login-form {
+  .login-form, .signup-form {
     padding: 5px !important;
     /* text-align: center !important; */
   }
 
-  .login-input {
+  .login-input, .signup-input {
     height: 40px !important;
     padding: 6px !important;
     margin-bottom: 10px !important;
   }
-  .login-title {
+  .login-title, .signup-title {
     margin-top: 70px !important;
   }
 }
