@@ -3,7 +3,12 @@ var should = require("should");
 const expect = require("chai").expect;
 var app = require('../../server');
 
+describe('POST api/v1/login', ()=>{
+  beforeEach(() => {
+    app = require('../../server');
+  });
 
+<<<<<<< HEAD
 describe('POST api/v1/login', ()=>{ 
     
     beforeEach(() => {
@@ -14,6 +19,11 @@ describe('POST api/v1/login', ()=>{
         await app.close();
       });
 
+=======
+  afterEach(async () => {
+    await app.close();
+  });
+>>>>>>> 63d6064ee57774dc3129e6fc7c7abc743a24ee69
     //sample correct JSON data which is in database
     describe('Signing in with a verified email and password', ()=>{
         it('should respond 200', (done)=>{
